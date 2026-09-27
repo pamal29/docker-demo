@@ -24,9 +24,9 @@ jobs:
 
       - name: Test application
         run: |
-		sleep 2
-		docker logs docker-demo-container
-		curl --fail http://localhost:8000
+          sleep 2
+          docker logs docker-demo-container
+          curl --fail http://localhost:8000
 
       - name: Stop container
         run: docker stop docker-demo-container
